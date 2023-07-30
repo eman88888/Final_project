@@ -9,6 +9,7 @@ import 'package:flutter_navigation/views/DetailsScreen.dart';
 import 'package:flutter_navigation/views/Main_Category.dart';
 import 'package:flutter_navigation/views/New_Home.dart';
 import 'package:flutter_navigation/features/splashview.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +24,7 @@ class App extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
